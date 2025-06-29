@@ -34,7 +34,7 @@ export default function ProfessionalZainSplash() {
       color: "from-blue-500 to-blue-600",
       hoverColor: "from-blue-500 to-blue-600",
       icon: Receipt,
-      accent: "gray",
+      accent: "white",
     },
   ]
 
@@ -72,11 +72,24 @@ export default function ProfessionalZainSplash() {
       </div>
 
       {/* Main Content Container */}
-      <div className="flex flex-col items-center justify-center px-3 pt-16 relative z-10">
+      <div className="flex flex-col items-center justify-center px-3 pt-8 relative z-10">
         {/* Awards Section with Staggered Animation */}
+        <div className="flex items-center gap-3">
+            <div className="relative">
+              <div className="w-14 h-14 full flex items-center justify-center shadow-2xl">
+                <div className="w-14 h-14 flex items-center justify-center animate-pulse-slow">
+                  <span className="text-white text-lg font-bold">
+                    <img src="/vercel.svg" alt=""/>
+                  </span>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-purple-400/20 rounded-full animate-ping"></div>
+            </div>
+          </div>
         <div
           className={`transition-all duration-1000 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
+          
               {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-12 lg:mb-16">
           {links.map((link, index) => {
@@ -84,7 +97,7 @@ export default function ProfessionalZainSplash() {
             return (
               <div
                 key={link.name}
-                className="group animate-fade-in-up w-full"
+                className="group animate-fade-in-up w-full "
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <a
@@ -95,7 +108,7 @@ export default function ProfessionalZainSplash() {
                 >
                   <div
                     className={`
-                    relative bg-white rounded-2xl sm:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-lg border border-gray-100
+                    relative bg-white/30 rounded-2xl text-white sm:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-lg  
                     transition-all duration-500 ease-out w-full
                     hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2
                     ${hoveredLink === link.name ? "shadow-2xl -translate-y-1 sm:-translate-y-2" : ""}
@@ -129,14 +142,14 @@ export default function ProfessionalZainSplash() {
                           <h3 className="text-xs sm:text-sm lg:text-base font-bold text-gray-900 mb-1 sm:mb-2 truncate">
                             {link.name}
                           </h3>
-                          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed line-clamp-2">
+                          <p className="text-xs sm:text-sm text-gray-100 leading-relaxed line-clamp-2">
                             {link.description}
                           </p>
                         </div>
                         <ExternalLink
                           className={`
-                          w-4 h-4 sm:w-5 sm:h-5 text-gray-400 transition-all duration-300 flex-shrink-0 ml-2
-                          ${hoveredLink === link.name ? "text-gray-600 rotate-45 scale-110" : ""}
+                          w-4 h-4 sm:w-5 sm:h-5 text-gray-100 transition-all duration-300 flex-shrink-0 ml-2
+                          ${hoveredLink === link.name ? "text-gray-100 rotate-45 scale-110" : ""}
                         `}
                         />
                       </div>
@@ -157,7 +170,7 @@ export default function ProfessionalZainSplash() {
                         <div
                           className={`
                           inline-flex items-center text-xs sm:text-sm font-medium transition-all duration-300
-                          ${hoveredLink === link.name ? "text-pink-600" : "text-gray-500"}
+                          ${hoveredLink === link.name ? "text-pink-600" : "text-gray-100"}
                         `}
                         >
                           <span>اضغط للاستكشاف</span>
@@ -232,21 +245,12 @@ export default function ProfessionalZainSplash() {
         <div
           className={`mb-6 transition-all duration-1000 delay-1500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
-          <div className="flex items-center gap-3">
-            <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-br from-white to-slate-200 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 rounded-full flex items-center justify-center animate-pulse-slow">
-                  <span className="text-white text-lg font-bold">Z</span>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-purple-400/20 rounded-full animate-ping"></div>
-            </div>
-          </div>
+         
         </div>
 
         {/* Arabic Subtitle */}
         <p
-          className={`text-slate-300 text-base mb-8 font-light transition-all duration-1000 delay-1700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
+          className={`text-slate-100 text-white mb-8 font-light transition-all duration-1000 delay-1700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
           dir="rtl"
         >
           القادم في كل جميل
