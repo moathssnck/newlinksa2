@@ -30,7 +30,7 @@ export default function ProfessionalZainSplash() {
     {
       name: "دفع الفواتير",
       description: "ادفع فواتيرك بسهولة وأمان",
-      href: "https://shorturl.at/Gv3H5",
+      href: "https://shorturl.at/7n68l",
       color: "from-blue-500 to-blue-600",
       hoverColor: "from-blue-500 to-blue-600",
       icon: Receipt,
