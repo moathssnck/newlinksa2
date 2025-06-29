@@ -108,7 +108,7 @@ export default function ProfessionalZainSplash() {
                 >
                   <div
                     className={`
-                    relative bg-white/30 rounded-2xl text-white sm:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-lg  
+                    relative bg-white/70 rounded-2xl text-black sm:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-lg  
                     transition-all duration-500 ease-out w-full
                     hover:shadow-2xl hover:-translate-y-1 sm:hover:-translate-y-2
                     ${hoveredLink === link.name ? "shadow-2xl -translate-y-1 sm:-translate-y-2" : ""}
@@ -142,7 +142,7 @@ export default function ProfessionalZainSplash() {
                           <h3 className="text-xs sm:text-sm lg:text-base font-bold text-gray-900 mb-1 sm:mb-2 truncate">
                             {link.name}
                           </h3>
-                          <p className="text-xs sm:text-sm text-gray-100 leading-relaxed line-clamp-2">
+                          <p className="text-xs sm:text-sm text-gray-500 leading-relaxed line-clamp-2">
                             {link.description}
                           </p>
                         </div>

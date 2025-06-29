@@ -59,13 +59,14 @@ export default function ProfessionalZainSplash() {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 overflow-hidden">
       {/* Animated Background Elements */}
+<img className="absolute left-8 top-0 bottom-0 w-full h-32" src="/121.svg" alt="left" />
+
       <div className="absolute inset-0">
         {/* Floating geometric shapes */}
-        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-white/10 rotate-45 animate-float"></div>
+        <div className="absolute top-20 left-10 w-32 h-22 border-2 border-white/10 rotate-45 animate-float"></div>
         <div className="absolute top-40 right-16 w-24 h-24 border-2 border-cyan-400/20 rotate-12 animate-float-delayed"></div>
         <div className="absolute bottom-40 left-8 w-28 h-28 border-2 border-white/10 -rotate-12 animate-float-slow"></div>
         <div className="absolute bottom-60 right-12 w-20 h-20 border-2 border-blue-400/20 rotate-45 animate-pulse"></div>
-
         {/* Gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-pulse-slower"></div>
