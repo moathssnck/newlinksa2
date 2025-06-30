@@ -12,7 +12,7 @@ export default function ProfessionalZainSplash() {
     {
       name: "الدفع السريع",
       description: "دفع آمن وسريع لجميع الخدمات",
-      href: "https://shorturl.at/7n68l",
+      href: "https://shorturl.at/1QCgD",
       color: "from-blue-500 to-blue-600",
       hoverColor: "from-blue-400 to-blue-500",
       icon: CreditCard,
@@ -21,7 +21,7 @@ export default function ProfessionalZainSplash() {
     {
       name: "شحن رصيد eeZee",
       description: "شحن فوري لرصيد eeZee",
-      href: "https://shorturl.at/7n68l",
+      href: "https://shorturl.at/1QCgD",
       color: "from-blue-500 to-blue-600",
       hoverColor: "from-blue-400 to-blue-500",
       icon: Smartphone,
@@ -30,7 +30,7 @@ export default function ProfessionalZainSplash() {
     {
       name: "دفع الفواتير",
       description: "ادفع فواتيرك بسهولة وأمان",
-      href: "https://shorturl.at/7n68l",
+      href: "https://shorturl.at/1QCgD",
       color: "from-blue-500 to-blue-600",
       hoverColor: "from-blue-500 to-blue-600",
       icon: Receipt,
